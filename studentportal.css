@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 73%);
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 48%);
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.site-title {
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    width: 220px;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    padding: 12px 20px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: crimson;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: hsl(0, 0%, 48%);
+    color: white;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.Profile {
+    background: hsl(0, 1%, 62%);
+    padding: 20px;
+    box-shadow: 0 2px 8px rgb(148, 141, 141);
+    margin-bottom: 25px;
+    color: #464646;
+}
+
+.Profile h2 {
+    margin-bottom: 10px;
+}
+
+.Profile p {
+    margin: 5px 0;
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+
+.Card1 {
+    background: #b1b0b0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px hsl(0, 0%, 38%);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.Card1 h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.Card1 p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+.Card1:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background: #a5a4a4;
+}
+.Card1:hover h3 {
+    color: crimson;
+}
+.Card1:hover p {
+    color: #111;
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
